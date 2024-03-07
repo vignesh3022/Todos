@@ -1,0 +1,238 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.todos-bg-container {
+    background-color: #f9fbfe;
+    height: 100vh;
+}
+
+.todo-item-container:hover {
+    background-color: #0056b3;
+    /* Light gray for hover effect */
+    cursor: pointer;
+}
+
+.edit-button-container {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.edit-button {
+    background-color: #3498db; /* Royal Blue */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-top: 8px ;
+    margin-right: 8px ;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-button:hover {
+background-color: #2980b9; /* Slightly darker Royal Blue on hover */
+color: #fff;
+}
+
+
+.todos-heading {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 46px;
+    font-weight: 800;
+    
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.create-task-heading {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.create-task-heading-subpart {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.todo-items-heading {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.todo-items-heading-subpart {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.todo-items-container {
+    margin: 10px;
+    padding: 0px;
+}
+
+.todo-item-container {
+    margin-top: 15px;
+}
+
+.todo-user-input {
+    background-color: white;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e7eb;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+
+.button,.refresh-button {
+background-color: #3498db; /* Royal Blue */
+color: #fff; /* White */
+border: 1px solid #3498db; /* Royal Blue border */
+border-radius: 5px; /* Rounded corners */
+cursor: pointer;
+transition: background-color 0.3s ease, color 0.3s ease;     
+font-family: "Roboto";
+font-size: 18px;
+margin-top: 20px;
+margin-bottom: 25px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-right: 20px;
+padding-left: 20px;
+}
+.button:hover,.refresh-button:hover{
+background-color:#0056b3
+}
+.label-container {
+    background-color: #cdeafc;
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #096f92;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 4px;
+}
+.label-container:hover{
+background-color:#0056b3 ;
+}
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.checkbox-label {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    width: 82%;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.delete-icon-container {
+    text-align: right;
+    width: 18%;
+}
+
+.delete-icon {
+    padding: 15px;
+}
+
+.checked {
+    text-decoration: line-through;
+    background-color: #0056b3;
+
+}  
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+#pomodoroContainer {
+font-family: "Roboto";
+font-size: 24px;
+font-weight: 700;
+color:#3498db ;
+margin-top: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+animation: fadeIn 0.5s ease;
+}
+
+#pomodoroButton, #resetButton, #startCustomPomodoroButton{
+background-color: #3498db; /* Royal Blue */
+color: #fff; 
+border: none;
+border-radius: 4px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: 5px;
+margin-top: 2px;
+margin-right: 20px;
+cursor: pointer;
+font-family: "Roboto";
+font-size: 18px;
+    
+}
+
+
+#pomodoroButton:hover, #resetButton:hover {
+background-color: #0056b3;
+}
+
+
+.notification-container {
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    z-index: 1000; /* Ensure it's above other elements */
+    opacity: 0;
+}
+.label{
+font-family: "Roboto";
+font-size: 18px;
+       
+}
+.refresh-game{
+    border-radius: 5px;
+    margin-left:1000px;
+    margin-top: -300px;
+}
+
+@keyframes blinkAnimation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .blink {
+    animation: blinkAnimation 1s infinite; /* Adjust the duration as needed */
+  }
+  

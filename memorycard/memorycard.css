@@ -1,0 +1,137 @@
+/* Add your CSS styles here */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9fbfe;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #F8F8F8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: lightblue;
+    
+  }
+  
+  .card {
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px;
+    width: 80px;
+    height: 80px;
+    border:black;
+  }
+  
+  .front,
+  .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 7px;
+    background: #fff;
+    backface-visibility: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s linear;
+  }
+  
+  .back {
+    transform: rotateY(-180deg);
+  }
+  
+  .card.flip .back {
+    transform: rotateY(0);
+  }
+  
+  .card.flip .front {
+    transform: rotateY(180deg);
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: 7px;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire space */
+      
+  }
+  
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .blink {
+    animation: blink 1s; /* Adjust the duration as needed */
+  }
+    
+
+  @keyframes shuffleAnimation {
+    0% {
+      transform: rotateY(0deg);
+    }
+    25% {
+      transform: rotateY(180deg);
+    }
+    50% {
+      transform: rotateY(0deg);
+    }
+    75% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+  
+  body:not(.initial-load) .card {
+    animation: shuffleAnimation 0.5s ease-in-out;
+}
+
+  .back-button ,#refresh-btn{
+    background-color: #3498db; /* Royal Blue */
+    color: #fff; /* White */
+    border: 1px solid #3498db; /* Royal Blue border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;     
+    font-family: "Roboto";
+    font-size: 20px;
+    margin-left: 9px;
+    margin-top:  5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+  .back-button:hover,#refresh-btn:hover{
+      background-color:#0056b3
+  }  
+  h1{
+    margin-right: 15px;
+    margin-left: -5px;
+    margin-top: -200px;
+    margin-bottom: 30px;
+    align-items: start;
+  }
+  .notification-container {
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    z-index: 1000; /* Ensure it's above other elements */
+    opacity: 0;
+  }

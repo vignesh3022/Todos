@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9fbfe;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.games-heading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:#3498db;
+    font-weight: bold;
+}
+.img{
+    height:100px;
+    width:100px;
+}
+.games-info {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.game-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+   
+
+}
+
+.game-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-image:linear-gradient(60deg,#3498db,#fff);
+}
+
+.game-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.game-description {
+    font-size: 16px;
+}
+
+.game-image {
+    max-width: 200px; /* Adjust the max-width as needed */
+    height: auto;
+}
+
+.back-button{
+background-color: #3498db; /* Royal Blue */
+color: #fff; /* White */
+border: 1px solid #3498db; /* Royal Blue border */
+border-radius: 5px; /* Rounded corners */
+cursor: pointer;
+transition: background-color 0.3s ease, color 0.3s ease;     
+font-family: "Roboto";
+font-size: 18px;
+margin-left: 680px;
+margin-top: -50px;
+margin-bottom: 20px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-right: 20px;
+padding-left: 20px;
+}
+.back-button:hover{
+    background-color:#0056b3
+}

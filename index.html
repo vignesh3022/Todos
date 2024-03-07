@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="todos-bg-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1 class="todos-heading">Todos</h1>
+                        <button class="refresh-button" id="refresh-button" onclick="opengamesinterface()">Refresh <br> Yourself</button>
+                    </div>
+                    <h1 class="create-task-heading">
+                        Create <span class="create-task-heading-subpart"> Your Tasks</span>
+                    </h1>
+                    <div>
+                        <button id="pomodoroButton">&#x25B6; &#x23F8; Pomodoro</button>
+                        <button id="resetButton">&#x1F501; &#x23F1;</button>
+                        <label for="customPomodoroTime" class="label"> Set Your Time (in minutes):</label>
+                        <input type="number" id="customPomodoroTime" min="1" value="25" />
+                        <button id="startCustomPomodoroButton"> Custom &#x23F1;</button>
+                    </div>
+                    
+
+                    <div id="pomodoroContainer"></div>
+                    <input type="text" id="todoUserInput" class="todo-user-input" placeholder="What needs to be done?" />
+                    <button class="button" id="addTodoButton" style="margin-bottom: 15px;">Add</button>
+                    <h1 class="todo-items-heading">
+                        My <span class="todo-items-heading-subpart">Tasks</span>
+                    </h1>
+                
+                    <div id="notificationContainer"></div>
+                    <div class="todo-items-container" id="todoItemsContainer"></div>
+                    <button class="button" id="saveTodoButton">Save</button>
+                    <button class="button" id="clearCompletedButton">Clear Completed</button>
+                    <button class="button" id="markAllCompletedButton">Mark All Completed</button>
+                    <input type="text" id="searchInput" class="todo-user-input" placeholder="Search tasks by text" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js">
+    </script>
+    <script>
+        function opengamesinterface() {
+            window.location.href = "./gamesinterface/games.html";
+        }
+    </script>
+</body>
+
+</html>

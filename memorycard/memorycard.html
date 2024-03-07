@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="memorycard.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  </head>
+  <body>
+    <div>
+    <h1>Sharpen Your memory</h1>
+    <div id="pomodoroContainer"></div>
+    <div class="d-flex justify-content-between align-items-center">
+        <button id="refresh-btn">Refresh</button>
+        <button class="back-button" onclick="goBack()">Back</button>
+      </div>
+    </div>
+    <div class="wrapper" id="card-container">
+    </div>
+    <script src="memorycard.js"></script>
+    <script>
+        function goBack() {
+                window.history.back();
+            }
+      </script>
+  </body>
+</html>

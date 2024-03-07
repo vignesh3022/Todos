@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css'>
+</head>
+<body>
+    <div class="d-flex justify-content-between align-items-center">
+      <h1>Welcome to the Tic Tac Toe Game!</h1>
+      <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+    
+    <div class="container">
+      <p>Try to beat the computer &#x1F525;  </p>
+      <div class="board clearfix">
+        <div class="row">
+          <div class="square" id="0"></div>
+          <div class="square" id="1"></div>
+          <div class="square" id="2"></div>
+        </div>
+        <div class="row">
+          <div class="square" id="3"></div>
+          <div class="square" id="4"></div>
+          <div class="square" id="5"></div>
+        </div>
+        <div class="row">
+          <div class="square" id="6"></div>
+          <div class="square" id="7"></div>
+          <div class="square" id="8"></div>
+        </div>
+        <div class="modal-container">
+          <div class="modal choose-modal">
+            <h3>Choose Your Weapon</h3>
+            <div class="button-area"><span class="x-marker">X</span><span class="o-marker">O</span>
+            </div>
+          </div>
+          <div class="modal end-game-modal">
+            <h3></h3>
+            <p>Try harder next time!</p>
+            <div class="button-area"><span>Play Again</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script> 
+  <script src="game.js"></script>
+  <script>
+    function goBack() {
+            window.history.back();
+        }
+  </script>
+</body>
+</html>
