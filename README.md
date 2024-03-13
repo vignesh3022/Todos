@@ -32,4 +32,4 @@ Welcome to the Interactive Todos and Productivity Suite, a comprehensive task ma
 - With local storage, there's no need for sign-ups, password remembering, or password recovery. Your data remains securely stored in your browser until you choose to delete it.
 
 ## Contributions
-- Contributions to the Interactive Todos and Productivity Suite are welcome! If you'd like to contribute code, report issues, or suggest new features, please refer to our [Contribution Guidelines](CONTRIBUTING.md) for more information.
+- Contributions to the Interactive Todos and Productivity Suite are welcome! If you'd like to contribute code, report issues, or suggest new features, please refer to me for more information.
