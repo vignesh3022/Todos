@@ -1,7 +1,15 @@
 # Interactive Todos and Productivity Suite
 
 Welcome to the Interactive Todos and Productivity Suite, a comprehensive task management and productivity enhancement web application designed to streamline your workflow and provide a refreshing break when needed.
+Problem Statement:
 
+The reason behind developing the Interactive Todos and Productivity Suite stems from the need for a hassle-free task management solution that doesn't require signing up or spending money. Many existing productivity apps often come with the burden of creating accounts, remembering passwords, and sometimes even subscription fees.
+
+Additionally, while taking breaks during work hours is essential for maintaining productivity and mental well-being, many entertainment options available online can be addictive and counterproductive. I wanted to create a platform that not only helps users manage their tasks efficiently but also provides a refreshing break without the risk of getting too engrossed or addicted.
+
+By including classic games like Chess, Tic Tac Toe, Word Scramble, and Memory Card in the Refresh Yourself section, the goal is to offer users a fun way to relax and unwind while also stimulating their minds. These games are designed to provide mental stimulation and challenge, helping users stay sharp and focused without the risk of becoming overly absorbed.
+
+Overall, the Interactive Todos and Productivity Suite aims to strike a balance between productivity and relaxation, offering users a comprehensive toolset to manage their tasks effectively while also promoting mental well-being and cognitive development.
 ## Features
 
 ### Todos Management
