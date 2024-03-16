@@ -2,7 +2,7 @@
 
 Welcome to the Interactive Todos and Productivity Suite, a comprehensive task management and productivity enhancement web application designed to streamline your workflow and provide a refreshing break when needed.
 Problem Statement:
-
+# Problem Statement
 The reason behind developing the Interactive Todos and Productivity Suite stems from the need for a hassle-free task management solution that doesn't require signing up or spending money. Many existing productivity apps often come with the burden of creating accounts, remembering passwords, and sometimes even subscription fees.
 
 Additionally, while taking breaks during work hours is essential for maintaining productivity and mental well-being, many entertainment options available online can be addictive and counterproductive. I wanted to create a platform that not only helps users manage their tasks efficiently but also provides a refreshing break without the risk of getting too engrossed or addicted.
