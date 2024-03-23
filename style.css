@@ -5,33 +5,25 @@
     height: 100vh;
 }
 
-.todo-item-container:hover {
-    background-color: #0056b3;
-    /* Light gray for hover effect */
-    cursor: pointer;
-}
 
 .edit-button-container {
     display: inline-block;
     margin-left: 10px;
+    
 }
 
 .edit-button {
-    background-color: #3498db; /* Royal Blue */
+    background-color: #1f88ce; /* Royal Blue */
     color: #fff; /* White */
-    border: none;
-    border-radius: 5px;
+    border: solid black;
+    border-radius: 4px;
     padding: 5px 10px;
     font-size: 15px;
-    margin-top: 8px ;
+    margin-top: 5px ;
     margin-right: 8px ;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
 
-.edit-button:hover {
-background-color: #2980b9; /* Slightly darker Royal Blue on hover */
-color: #fff;
 }
 
 
@@ -109,6 +101,8 @@ padding-left: 20px;
 .button:hover,.refresh-button:hover{
 background-color:#0056b3
 }
+
+
 .label-container {
     background-color: #cdeafc;
     width: 100%;
@@ -119,10 +113,14 @@ background-color:#0056b3
     border-top: none;
     border-bottom: none;
     border-radius: 4px;
+
 }
 .label-container:hover{
-background-color:#0056b3 ;
+background-color:#2f70b5 ;
+
 }
+
+
 .checkbox-input {
     width: 20px;
     height: 20px;
@@ -141,22 +139,27 @@ background-color:#0056b3 ;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .delete-icon-container {
     text-align: right;
+    cursor: pointer;
     width: 18%;
 }
 
 .delete-icon {
     padding: 15px;
+    color: black;
 }
 
 .checked {
     text-decoration: line-through;
-    background-color: #0056b3;
+    text-decoration-thickness:4px; 
 
 }  
+
+
 @keyframes fadeIn {
 from {
     opacity: 0;
@@ -197,7 +200,7 @@ font-size: 18px;
 }
 
 
-#pomodoroButton:hover, #resetButton:hover {
+#pomodoroButton:hover, #resetButton:hover, #startCustomPomodoroButton:hover {
 background-color: #0056b3;
 }
 
@@ -233,6 +236,33 @@ font-size: 18px;
   }
   
   .blink {
-    animation: blinkAnimation 1s infinite; /* Adjust the duration as needed */
+    animation: blinkAnimation 2s infinite; /* Adjust the duration as needed */
   }
   
+  .star-container {
+    width: 50px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+}
+
+.star {
+    cursor: pointer;
+    font-size: 27px;
+}
+
+.green {
+    background-color: rgb(54, 173, 54);
+}
+
+.orange {
+    background-color: rgb(236, 172, 54);
+}
+
+.red {
+    background-color: rgb(228, 58, 58);
+}
