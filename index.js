@@ -229,6 +229,7 @@ function onDeleteTodo(todoId) {
     todoList.splice(deleteElementIndex, 1);
 }
 
+
 function createAndAppendTodo(todo) {
     let todoId = "todo" + todo.uniqueNo;
     let checkboxId = "checkbox" + todo.uniqueNo;
@@ -265,11 +266,35 @@ function createAndAppendTodo(todo) {
     }
     labelContainer.appendChild(labelElement);
 
-    let categoryInput = document.createElement("input");
-    categoryInput.type = "text";
-    categoryInput.placeholder = "Category";
-    categoryInput.classList.add("category-input");
-    labelContainer.appendChild(categoryInput);
+     
+   // Create star container
+   let starContainer = document.createElement("div");
+   starContainer.classList.add("star-container");
+
+   let star = document.createElement("span");
+   star.classList.add("star");
+
+   // Set star color based on the todo object
+   if (todo.starColor) {
+       starContainer.classList.add(todo.starColor);
+   } else {
+       starContainer.classList.add("green"); // Default color
+   }
+
+   star.textContent = "★";
+
+   // Add click event listener to toggle star color
+   star.addEventListener("click", function() {
+       toggleStarColor(starContainer, todoId);
+   });
+
+   // Append star to the star container
+   starContainer.appendChild(star);
+
+   // Append star container to the label container
+   labelContainer.appendChild(starContainer);
+
+
 
     let deleteIconContainer = document.createElement("div");
     deleteIconContainer.classList.add("delete-icon-container");
@@ -299,6 +324,33 @@ function createAndAppendTodo(todo) {
     deleteIconContainer.appendChild(deleteIcon);
 }
 
+
+function toggleStarColor(starContainer, todoId) {
+    let todoObjectIndex = todoList.findIndex(todo => "todo" + todo.uniqueNo === todoId);
+    let todoObject = todoList[todoObjectIndex];
+
+    if (starContainer.classList.contains("green")) {
+        starContainer.classList.remove("green");
+        starContainer.classList.add("orange");
+        todoObject.starColor = "orange"; // Update the todo object with the star color
+    } else if (starContainer.classList.contains("orange")) {
+        starContainer.classList.remove("orange");
+        starContainer.classList.add("red");
+        todoObject.starColor = "red"; // Update the todo object with the star color
+    } else if (starContainer.classList.contains("red")) {
+        starContainer.classList.remove("red");
+        starContainer.classList.add("green");
+        todoObject.starColor = "green"; // Update the todo object with the star color
+    } else {
+        // If none of the classes are present, default to green
+        starContainer.classList.add("green");
+        todoObject.starColor = "green"; // Update the todo object with the default star color
+    }
+
+    // Update localStorage
+    updateLocalStorage();
+}
+
 for (let todo of todoList) {
     createAndAppendTodo(todo);
 }
@@ -318,6 +370,7 @@ function clearCompletedTasks() {
     });
     updateLocalStorage();
 }
+
 
 // Function to mark all tasks as completed
 function markAllTasksAsCompleted() {
