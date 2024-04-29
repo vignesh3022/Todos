@@ -5,33 +5,26 @@
     height: 100vh;
 }
 
-.todo-item-container:hover {
-    background-color: #0056b3;
-    /* Light gray for hover effect */
-    cursor: pointer;
-}
 
 .edit-button-container {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 60px;
+    margin-right: 10px;
+    
 }
 
 .edit-button {
-    background-color: #3498db; /* Royal Blue */
+    background-color: #1f88ce; /* Royal Blue */
     color: #fff; /* White */
-    border: none;
-    border-radius: 5px;
+    border: solid black;
+    border-radius: 4px;
     padding: 5px 10px;
     font-size: 15px;
-    margin-top: 8px ;
+    margin-top: 5px ;
     margin-right: 8px ;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
 
-.edit-button:hover {
-background-color: #2980b9; /* Slightly darker Royal Blue on hover */
-color: #fff;
 }
 
 
@@ -40,7 +33,6 @@ color: #fff;
     font-family: "Roboto";
     font-size: 46px;
     font-weight: 800;
-    
     margin-bottom: 25px;
     margin-top: 20px;
 }
@@ -49,18 +41,16 @@ color: #fff;
     font-family: "Roboto";
     font-size: 32px;
     font-weight: 700;
-}
-
-.create-task-heading-subpart {
-    font-family: "Roboto";
-    font-size: 32px;
-    font-weight: 500;
+    margin-bottom: 15px;
 }
 
 .todo-items-heading {
     font-family: "Roboto";
     font-size: 32px;
     font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-right:50px;
 }
 
 .todo-items-heading-subpart {
@@ -80,17 +70,18 @@ color: #fff;
 
 .todo-user-input {
     background-color: white;
-    width: 100%;
+    width: 60%;
     border-style: solid;
     border-width: 1px;
     border-color: #e4e7eb;
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 5px;
+    margin-right: 15px;
     padding: 15px;
 }
 
-.button,.refresh-button {
+.button {
 background-color: #3498db; /* Royal Blue */
 color: #fff; /* White */
 border: 1px solid #3498db; /* Royal Blue border */
@@ -107,8 +98,28 @@ padding-right: 20px;
 padding-left: 20px;
 }
 .button:hover,.refresh-button:hover{
-background-color:#0056b3
+background-color:#0056b3;
 }
+
+.refresh-button{
+background-color: #3498db; /* Royal Blue */
+color: #fff; /* White */
+border: 1px solid #3498db; /* Royal Blue border */
+border-radius: 5px; /* Rounded corners */
+cursor: pointer;
+transition: background-color 0.3s ease, color 0.3s ease;     
+font-family: "Roboto";
+font-size: 18px;
+margin-top: 20px;
+margin-bottom: 25px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-right: 20px;
+padding-left: 20px;
+}
+
+
+
 .label-container {
     background-color: #cdeafc;
     width: 100%;
@@ -119,10 +130,14 @@ background-color:#0056b3
     border-top: none;
     border-bottom: none;
     border-radius: 4px;
+
 }
 .label-container:hover{
-background-color:#0056b3 ;
+background-color:#2f70b5 ;
+
 }
+
+
 .checkbox-input {
     width: 20px;
     height: 20px;
@@ -141,22 +156,11 @@ background-color:#0056b3 ;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.delete-icon-container {
-    text-align: right;
-    width: 18%;
-}
 
-.delete-icon {
-    padding: 15px;
-}
 
-.checked {
-    text-decoration: line-through;
-    background-color: #0056b3;
-
-}  
 @keyframes fadeIn {
 from {
     opacity: 0;
@@ -189,15 +193,19 @@ padding-left: 20px;
 padding-right: 20px;
 border-radius: 5px;
 margin-top: 2px;
-margin-right: 20px;
+margin-right: 18px;
 cursor: pointer;
 font-family: "Roboto";
 font-size: 18px;
     
 }
 
+#customPomodoroTime{
+    margin-right: 25px;
+}
 
-#pomodoroButton:hover, #resetButton:hover {
+
+#pomodoroButton:hover, #resetButton:hover, #startCustomPomodoroButton:hover {
 background-color: #0056b3;
 }
 
@@ -207,7 +215,7 @@ background-color: #0056b3;
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #4caf50; /* Green background color */
+    background-color: #3498db; /* Green background color */
     color: #fff; /* White text color */
     padding: 20px;
     border-radius: 5px;
@@ -233,6 +241,71 @@ font-size: 18px;
   }
   
   .blink {
-    animation: blinkAnimation 1s infinite; /* Adjust the duration as needed */
+    animation: blinkAnimation 2s infinite; /* Adjust the duration as needed */
   }
   
+
+.star-container {
+    width: 50px;
+    height: 50px; /* Adjusted height for better proportion */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%; /* Perfect circle */
+    margin-left: -50px;
+    margin-right: 150px; /* Reduced right margin for better alignment */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+    cursor: pointer;
+}
+
+
+.star {
+    font-size: 27px;
+    cursor: pointer;
+    color: #0a0701; /* Star color */
+}
+
+.green {
+    background-color: rgb(54, 173, 54);
+}
+
+.orange {
+    background-color: rgb(236, 172, 54);
+}
+
+.red {
+    background-color: rgb(228, 58, 58);
+}
+
+.circle-checkbox {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    border: 2px solid #090101be; 
+    outline: none; 
+    appearance: none; 
+    -webkit-appearance: none; /* Remove default styles for WebKit browsers */
+    -moz-appearance: none; /* Remove default styles for Mozilla Firefox */
+}
+
+.circle-checkbox:checked {
+    background-color: #007bff; /* Change background color when checked */
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+.flex-container{
+    display:flex;
+    flex-direction: row;
+  
+}

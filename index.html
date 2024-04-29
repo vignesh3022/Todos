@@ -18,15 +18,15 @@
                 <div class="col-sm-12 col-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="d-flex justify-content-between align-items-center">
                         <h1 class="todos-heading">Todos</h1>
-                        <button class="refresh-button" id="refresh-button" onclick="opengamesinterface()">Refresh <br> Yourself</button>
+                        <button class="refresh-button" id="refresh-button" onclick="opengamesinterface()">Energize <br> Yourself</button>
                     </div>
                     <h1 class="create-task-heading">
-                        Create <span class="create-task-heading-subpart"> Your Tasks</span>
+                        Create Your Tasks 
                     </h1>
                     <div>
                         <button id="pomodoroButton">&#x25B6; &#x23F8; Pomodoro</button>
                         <button id="resetButton">&#x1F501; &#x23F1;</button>
-                        <label for="customPomodoroTime" class="label"> Set Your Time (in minutes):</label>
+                        <label for="customPomodoroTime" class="label"> Set Time (in minutes):</label>
                         <input type="number" id="customPomodoroTime" min="1" value="25" />
                         <button id="startCustomPomodoroButton"> Custom &#x23F1;</button>
                     </div>
@@ -35,21 +35,22 @@
                     <div id="pomodoroContainer"></div>
                     <input type="text" id="todoUserInput" class="todo-user-input" placeholder="What needs to be done?" />
                     <button class="button" id="addTodoButton" style="margin-bottom: 15px;">Add</button>
-                    <h1 class="todo-items-heading">
-                        My <span class="todo-items-heading-subpart">Tasks</span>
+                    <div class="flex-container">
+                        <h1 class="todo-items-heading">
+                        My Tasks 
                     </h1>
+                    <button class="button" id="markAllCompletedButton">Clear All Tasks</button> 
+                </div>
+                    
                 
                     <div id="notificationContainer"></div>
                     <div class="todo-items-container" id="todoItemsContainer"></div>
-                    <button class="button" id="saveTodoButton">Save</button>
-                    <button class="button" id="clearCompletedButton">Clear Completed</button>
-                    <button class="button" id="markAllCompletedButton">Mark All Completed</button>
-                    <input type="text" id="searchInput" class="todo-user-input" placeholder="Search tasks by text" />
+                    
                 </div>
             </div>
         </div>
     </div>
-    <script src="index.js">
+    <script src="script.js">
     </script>
     <script>
         function opengamesinterface() {
