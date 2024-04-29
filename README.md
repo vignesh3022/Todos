@@ -11,7 +11,7 @@ Welcome to the Todos Website, a simple yet powerful tool to organize your tasks 
 
 ## Getting Started
 
-1. **Access the Todos Website**: Simply visit the Todos Website to start managing your tasks.
+1. **Access the Todos Website**: Simply visit the [Todos Website](https://our-todos.netlify.app/) to start managing your tasks.
 2. **Add Tasks**: Use the input field to add new tasks and press Enter to save them.
 3. **Manage Tasks**: Click on tasks to mark them as completed or delete them as needed.
 4. **Refresh Yourself**: Explore the "Energize Yourself" section to play games and recharge your mind.
@@ -27,6 +27,6 @@ Feeling exhausted or in need of a break? Take some time to play engaging games a
 
 ## Deployment
 
-Access the Todos Website using the following link: [https://our-todos.netlify.app/](#)
+Access the Todos Website using the following link: [Todos Website](https://our-todos.netlify.app/)
 
 Start organizing your tasks and refreshing your mind with energizing games!
