@@ -8,12 +8,8 @@
 
 .edit-button-container {
     display: inline-block;
-<<<<<<< HEAD
     margin-left: 60px;
     margin-right: 10px;
-=======
-    margin-left: 10px;
->>>>>>> 0dcf77b605b6f986932a753d0a527fd8807ebac8
     
 }
 
@@ -105,7 +101,6 @@ padding-left: 20px;
 background-color:#0056b3;
 }
 
-<<<<<<< HEAD
 .refresh-button{
 background-color: #3498db; /* Royal Blue */
 color: #fff; /* White */
@@ -124,8 +119,6 @@ padding-left: 20px;
 }
 
 
-=======
->>>>>>> 0dcf77b605b6f986932a753d0a527fd8807ebac8
 
 .label-container {
     background-color: #cdeafc;
@@ -166,29 +159,8 @@ background-color:#2f70b5 ;
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 
 
-=======
-.delete-icon-container {
-    text-align: right;
-    cursor: pointer;
-    width: 18%;
-}
-
-.delete-icon {
-    padding: 15px;
-    color: black;
-}
-
-.checked {
-    text-decoration: line-through;
-    text-decoration-thickness:4px; 
-
-}  
-
-
->>>>>>> 0dcf77b605b6f986932a753d0a527fd8807ebac8
 @keyframes fadeIn {
 from {
     opacity: 0;
@@ -232,10 +204,6 @@ font-size: 18px;
     margin-right: 25px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 0dcf77b605b6f986932a753d0a527fd8807ebac8
 #pomodoroButton:hover, #resetButton:hover, #startCustomPomodoroButton:hover {
 background-color: #0056b3;
 }
@@ -275,21 +243,14 @@ font-size: 18px;
     animation: blinkAnimation 2s infinite; /* Adjust the duration as needed */
   }
   
-<<<<<<< HEAD
 
 .star-container {
     width: 50px;
     height: 50px; /* Adjusted height for better proportion */
-=======
-  .star-container {
-    width: 50px;
-    height: 100%;
->>>>>>> 0dcf77b605b6f986932a753d0a527fd8807ebac8
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     border-radius: 40%; /* Perfect circle */
     margin-left: -50px;
     margin-right: 150px; /* Reduced right margin for better alignment */
@@ -303,15 +264,6 @@ font-size: 18px;
     font-size: 27px;
     cursor: pointer;
     color: #0a0701; /* Star color */
-=======
-    border-radius: 50%;
-    
-}
-
-.star {
-    cursor: pointer;
-    font-size: 27px;
->>>>>>> 0dcf77b605b6f986932a753d0a527fd8807ebac8
 }
 
 .green {
@@ -325,7 +277,6 @@ font-size: 18px;
 .red {
     background-color: rgb(228, 58, 58);
 }
-<<<<<<< HEAD
 
 .circle-checkbox {
     width: 20px; 
@@ -357,5 +308,3 @@ font-size: 18px;
     flex-direction: row;
   
 }
-=======
->>>>>>> 0dcf77b605b6f986932a753d0a527fd8807ebac8
